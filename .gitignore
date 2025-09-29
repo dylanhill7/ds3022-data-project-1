@@ -1,0 +1,9 @@
+# parquet files
+*.parquet
+
+# logs
+*.log
+
+# duckDB database files
+*.duckdb
+
