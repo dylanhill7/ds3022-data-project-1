@@ -13,3 +13,6 @@
 # dbt specfic
 /dbt/target/
 /dbt/.user.yml
+
+# macOS system files
+.DS_Store
