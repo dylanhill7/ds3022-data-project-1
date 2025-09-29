@@ -5,5 +5,11 @@
 *.log
 
 # duckDB database files
-*.duckdb
+*.duckDB
 
+# virtual environment
+.myenv
+
+# dbt specfic
+/dbt/target/
+/dbt/.user.yml

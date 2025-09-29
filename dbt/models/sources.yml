@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: emissions
+    schema: main
+    tables:
+      - name: yellow_taxi_all_years_clean
+        description: "All yellow taxi trips from 2015-2024 with cleaned data"
+      - name: vehicle_emissions
+        description: "Lookup table for CO2 emissions per vehicle type"
+
