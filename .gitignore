@@ -8,7 +8,7 @@
 *.duckDB
 
 # virtual environment
-.myenv
+*myenv
 
 # dbt specfic
 /dbt/target/

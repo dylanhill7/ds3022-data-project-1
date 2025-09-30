@@ -9,7 +9,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def clean_parquet():
+def clean_tables():
 
     con = None
 
@@ -57,9 +57,9 @@ def clean_parquet():
             count_after = con.execute(f"SELECT COUNT(*) FROM {clean_table}").fetchone()[0]
             
             msg = (
-                f"Removed duplicates from {table_name}. "
-                f"Before: {count_before}, After: {count_after}, "
-                f"Removed: {count_before - count_after}"
+                f"Finished cleaning {table_name}. "
+                f"Rows Before: {count_before}, Rows After: {count_after}, "
+                f"Number of Rows Removed: {count_before - count_after}"
             )
             print(msg)
             logger.info(msg)
@@ -92,4 +92,4 @@ def clean_parquet():
             print("DuckDB connection closed after cleaning")
 
 if __name__ == "__main__":
-    clean_parquet()
+    clean_tables()
